@@ -1,0 +1,374 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+ }
+ 
+ html,body {
+     height: 100%;
+ }
+ 
+ .gray-screen {
+     width: 100%;
+     height: 720px;
+     background-color: #f3f4f7;
+ }
+ 
+ /*Nome-Facebook*/
+ 
+ .facebook {
+     position: absolute;
+     top: 240px;
+     left: 450px;
+     font-size: 60px;
+     font-weight: bold;
+     color: #1877f2;
+ 
+ }
+ 
+ .facebook-text p {
+     position: absolute;
+     top: 310px;
+     left: 450px;
+     font-size: 30px;
+     color: black;
+ }
+ 
+ .facebook-text-media {
+     display: none;
+ }
+ 
+ 
+ .box {
+     position: absolute;
+     width: 390px;
+     height: 370px;
+     background-color: white;
+     left: 1050px;
+     top: 150px;
+     border-radius: 10px;
+     box-shadow: 1px 1px 20px #ccc;
+ 
+ }
+ 
+ .box input:focus {
+     outline: none;
+ }
+ 
+ .email input[type=text], input[type=password] {
+     width: 358px;
+     margin-left: 15px;
+     margin-top: 15px;
+     padding: 15px;
+     font-size: 18px;
+     border-radius: 10px;
+     border-width: 1px;
+ }
+ 
+ .box input[type=submit] {
+     width: 358px;
+     margin-left: 15px;
+     margin-top: 15px;
+     padding: 15px;
+     font-size: 25px;
+     font-weight: bold;
+     color: white;
+     background-color: #1877f2;
+     border: 0;
+     border-radius: 10px;
+     cursor: pointer;
+     
+ }
+ 
+ .esq {
+     text-align: center;
+     margin-top: 20px;
+     color: #1877f2;
+ }
+ 
+ .esq:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+ 
+ /*Linha horizontal que separa: "Esqueceu a senha?" e o botao de "criar nova conta"*/
+ .line {
+     border-bottom: 1px solid #ccc;
+     margin-top: 20px;
+     margin-left: 15px;
+     width: 358px;
+     text-decoration: underline;
+ }
+ 
+ .box input[type=button] {
+     width: 195px;
+     margin-top: 25px;
+     margin-left: 95px;
+     padding: 15px;
+     border-radius: 10px;
+     background-color: #4ac531;
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     border: 0;
+     
+ }
+ 
+ .box input[type=button]:hover {
+     background-color: #42b72a;
+ }
+ 
+ .footer {
+     margin-left: 450px;
+     margin-top: 30px;
+     color: #808080;
+ }
+ 
+ 
+ .footer-border {
+     border-bottom: 1px solid #e2dfdf;
+     margin-top: 10px;
+     margin-right: 470px;
+ 
+ }
+ 
+ .line-down {
+     margin-top: 15px;
+     margin-right: 500px;
+ }
+ 
+ .meta {
+     margin-top: 30px;
+     padding-bottom: 100px;
+ }
+ 
+ span:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+ 
+ .gray-scren,.text {
+     position: absolute;
+     margin-left: 1060px;
+     margin-top: 545px;
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .text span {
+     font-weight: bold;
+ }
+ 
+ /*Responsivo: iphone 5*/
+ 
+ @media (max-width: 500px) {
+     .page {
+         overflow-x: auto;
+     }
+ 
+     .facebook {
+         top: 25px;
+         left: 125px;
+         text-align: center;       
+     }
+ 
+     .facebook-text p {
+         font-size: 28px;
+         text-align: center;
+         left: 8px;
+         right: 8px;
+         top: 110px;
+         
+     }
+ 
+     .gray-screen {
+         width: 100%;
+     }
+ 
+     .gray-screen > .text {
+         margin-left: 70px;
+         margin-top: 650px;
+     }
+ 
+     .box {
+         left: 55px;
+         top: 250px;
+     }
+ 
+     .footer {
+         margin-left: 55px;
+         margin-top: 30px;
+         color: #808080;
+     }
+ 
+     .footer-border {
+         border-bottom: 1px solid #e2dfdf;
+         margin-top: 15px;
+         margin-right: 45px;
+     }
+ 
+     .line-down {
+         margin-top: 15px;
+         margin-right: 10px;
+         line-height: 23px;
+         font-size: 15px;
+     } 
+ 
+     .meta {
+         margin-top: 30px;
+         padding-bottom: 100px;
+         font-size: 13px;
+     }
+ }
+ 
+ /*Desktop*/
+ @media screen and (min-width: 1664px) {
+     body {
+         overflow-y: hidden;
+     }
+ }
+ 
+ /*ipad*/
+ @media screen and (width: 1024px) {
+     .gray-screen {
+         width: 100%;
+         height: 560px;
+         background-color: #f3f4f7;
+     }
+ 
+     .facebook {
+         position: absolute;
+         top: 172px;
+         left: 80px;
+         font-size: 60px;
+         font-weight: bold;
+         color: #1877f2;   
+     }
+ 
+     .facebook-text p {
+         position: absolute;
+         top: 240px;
+         left: 80px;
+         font-size: 24px;
+         color: black;
+     }
+ 
+     .box {
+         position: absolute;
+         width: 390px;
+         height: 370px;
+         background-color: white;
+         left: 530px;
+         top: 100px;
+         border-radius: 10px;
+         box-shadow: 1px 1px 20px #ccc;
+     }
+ 
+     .gray-scren,.text {
+         position: absolute;
+         margin-left: 545px;
+         margin-top: 490px;
+         font-size: 20px;
+         text-align: center;
+     }
+ 
+     .footer {
+         margin-left: 80px;
+         margin-top: 30px;
+         color: #808080;
+         min-width: 200px;
+     }
+     
+     .line-down {
+         margin-top: 15px;
+         margin-right: 100px;
+     }
+ 
+     .meta {
+         margin-top: 20px;
+         padding-bottom: 100px;
+     }
+ 
+     body {
+         overflow-y: hidden;
+     }
+ 
+     .footer-border {
+         border-bottom: 1px solid #e2dfdf;
+         margin-top: 10px;
+         margin-left: 3px;
+         margin-right: 110px;
+     
+     }
+     
+ }
+ 
+ /*Laptop*/
+ @media screen and (width: 1424px) {
+ 
+     body {
+         overflow: hidden;
+     }
+ 
+     .facebook {
+         position: absolute;
+         top: 205px;
+         left: 180px;
+         font-size: 60px;
+         font-weight: bold;
+         color: #1877f2;
+     
+     }
+     
+     .facebook-text p {
+         position: absolute;
+         top: 270px;
+         left: 180px;
+         font-size: 30px;
+         color: black;
+     }
+ 
+     .box {
+         position: absolute;
+         width: 390px;
+         height: 370px;
+         background-color: white;
+         left: 800px;
+         top: 130px;
+         border-radius: 10px;
+         box-shadow: 1px 1px 20px #ccc;
+     
+     }
+ 
+     .gray-scren,.text {
+         position: absolute;
+         margin-left: 810px;
+         margin-top: 540px;
+         font-size: 20px;
+         text-align: center;
+     }
+ 
+     .gray-screen {
+         width: 100%;
+         height: 650px;
+         background-color: #f3f4f7;
+     }
+ 
+     .footer {
+         margin-left: 180px;
+         margin-top: 15px;
+         color: #808080;
+     }
+ 
+     .line-down {
+         margin-top: 15px;
+         margin-right: 200px;
+     }
+ 
+     .meta {
+         margin-top: 15px;
+         padding-bottom: 100px;
+     }
+ }
